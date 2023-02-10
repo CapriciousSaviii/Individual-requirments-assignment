@@ -2,48 +2,59 @@
 # Each use case should contain the following elements:
 
 ## Title 
-(active verb phrase, states main goal)
+Augur-Study
 
 
 ## Description 
-(This may be several paragraphs. Context is important. You are describing the use case in some detail, and since many of the use cases will involve users changing parameters on data visualizations, you should be exceedingly clear about this type of thing.)
-
+Augur is a software suite that is used for collecting data from free and open-source software communities, They trace data from a group of repositarties,
+which are then made into a data model, which are then analyzed to provide certain metrics about data. This is very important to devlopers today because 
+they really want to know about the progress and metrics about the project, which could be used to make decisions on if the project is sustainabile or not.
+It could also be used to see how well a team is doing on the project and if the quality of their work is at a level which they want or not.
 
 
 ## Triggers 
-(What prompts the use case to start?)
+1. The devlopers agree to come together and make use of augur's abilities, then they add all their repositaries to augur, which will then evaluate the 
+health and sustainability of the project, and provide data to teh devlopers.
+2. An executive wants to use augur to make sure that the quality of work that his team is doing is of an approvable level. 
 
 
 
 ## Actors 
-(Who is involved?)
-
+1. Managers
+2. Devlopers
+3. Clients
 
 
 ## Preconditions 
-(This includes things like “data loaded”. Or, project is flagged as “of interest”; etc.)
+1. Github repositaries.
+2. Devloped projects.
+3. User can see the reseults of the data model.
 
 
 
 ## Main Success Scenario (Goals)
-(What does it look like when the user’s work is successful in the system?)
+1. The user provides valid github repositaries.
+2. They're combined intoa working data model.
+3. They're displayed to the user properly.
 
 
 
 ## Alternate Success Scenarios 
-(For a data analysis and “data playing” focused project like this one, there could be several different success scenarios for each use case. “Sees visualization” is not a success scenario. “Compares four different projects on “indicator X” and saves “project trackers” for each one could be a success scenario.)
-
+1. None
 
 
 ## Failed End Condition 
-(“crashes” is not a failed end condition. “User is unable to discern the difference between two projects because they are similar on the available indicators” might be).
-
+1. The provided URL goes to a GitHub that doesn't exist so the dat model cannot be created so an error message is sent.
+2. There isn't proper data to provide metrics on the project.
+3. The user isn't properly able to view the results of the data model.
 
 ## Extensions
-
+1. To be able to compare the diffrent metric between the repositaries.
 
 ## Steps of Execution (Requirements)
-
+1. A URL that leads to a GitHub repositary is sent into augur.
+2. Augur then creates a data model after analyzing the repositaries.
+3. This data is then shown to the user.
 
 ## A use case diagram
 (following the UML Standard for expressing use cases.)
